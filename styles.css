@@ -1,0 +1,156 @@
+/* text-decoration:none; */
+* {
+}
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  margin-block: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  height: 20rem;
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* .content :hover{
+    transform: scale(1.25); 
+  } */
+
+h1 {
+  font-family: monospace;
+}
+.colors {
+  color: black;
+  background: linear-gradient(
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #38d523,
+    #bdd523,
+    #d59423,
+    #d56723,
+    #d52323
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.colors:hover {
+  transform: scale(1.1);
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
+.numbersText {
+  color: white;
+ position: absolute;
+}
+.matrix {
+  background-color: black;
+}
+.matrix:hover {
+    transform: scale(1.1);
+    -webkit-transition: transform 0.5s ease-in-out;
+  }
+canvas {
+  display: block;
+  width: 384px;
+  height: 320px;
+  border-radius: 10px;
+}
+.memes {
+    background-image: url("https://i.pinimg.com/originals/4a/f6/53/4af653afafa56ee39f6661e2cbb11aba.gif");
+    background-repeat: no-repeat;
+    background-size: 384px 320px;
+  }
+  .memes:hover {
+    transform: scale(1.1);
+    -webkit-transition: transform 0.5s ease-in-out;
+  }
+  .memesText{
+      color: black;
+  }
+
+  .cities {
+    background-image: url("https://images.unsplash.com/photo-1602828889956-45ec6cee6758?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+    background-repeat: no-repeat;
+    background-size: 384px 320px;
+  }
+  .cities:hover {
+    transform: scale(1.1);
+    -webkit-transition: transform 0.5s ease-in-out;
+  }
+  .citiesText{
+    color: black;
+  }
+
+  .countries {
+    background-image: url("https://cdn.dribbble.com/users/463766/screenshots/2901407/media/5753ed1f12aebee7d56ae96f0fb013de.gif");
+    background-repeat: no-repeat;
+    background-size: 384px 320px;
+  }
+  .countries:hover {
+    transform: scale(1.1);
+    -webkit-transition: transform 0.5s ease-in-out;
+  }
+  .countriesText{
+    color: black;
+  }
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+a{
+    text-decoration: none;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transorm: translateX(25%);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
