@@ -14,7 +14,7 @@ a.addEventListener("click", () => {
   document.body.style.backgroundColor = getRandomColor();
   document.getElementById("text").innerText = getRandomColor();
 });
-
+w
 
 function copy() {
     // Get the text field
